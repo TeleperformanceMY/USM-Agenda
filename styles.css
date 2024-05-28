@@ -1,0 +1,166 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    background-color: #ec008c;
+    color: #fff;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.agenda-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 0 1 300px;
+}
+
+.agenda-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.agenda-table th, .agenda-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.agenda-table th {
+    background-color: #ec008c;
+    color: white;
+}
+
+.agenda-table td ul {
+    padding-left: 20px;
+}
+
+.google-form {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.google-form a {
+    color: #ec008c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.google-form a:hover {
+    text-decoration: underline;
+}
+
+.guests, .speakers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.guest, .speaker {
+    margin: 10px;
+    text-align: center;
+}
+
+.guest img, .speaker img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .agenda-table th, .agenda-table td {
+        font-size: 0.9em;
+    }
+}
