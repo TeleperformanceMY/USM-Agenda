@@ -17,7 +17,7 @@ body {
 
 .header {
     text-align: center;
-    background-color: #ec008c;
+    background: linear-gradient(to bottom, #ffffff, #ff0082);
     color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -71,7 +71,7 @@ body {
 }
 
 .agenda-table th {
-    background-color: #ec008c;
+    background-color: #ff0082;
     color: white;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .google-form a {
-    color: #ec008c;
+    color: #ff0082;
     text-decoration: none;
     font-weight: bold;
 }
@@ -97,15 +97,37 @@ body {
     text-decoration: underline;
 }
 
+/* Add this CSS to your existing stylesheet */
+
+/* Logo Styles */
+.logos {
+      align-items: center; /* Align vertically */
+    margin-bottom: 20px;
+}
+
+.logos img {
+    width: 150px; /* Adjust size for bigger logos */
+    height: auto;
+    margin: 0 20px; /* Adjust spacing between logos */
+}
+.logos img.large {
+    width: 280px; /* Adjust size for larger logos */
+}
+
+
+/* Adjust alignment for Guests and Speakers */
 .guests, .speakers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Center align */
 }
 
 .guest, .speaker {
     margin: 10px;
     text-align: center;
+    width: 200px; /* Adjust width as needed */
 }
+
 
 .guest img, .speaker img {
     width: 100px;
@@ -170,5 +192,18 @@ body {
 
     .agenda-table th, .agenda-table td {
         font-size: 0.9em;
+    }
+    .logos {
+        justify-content: center; /* Center align for mobile */
+        flex-wrap: wrap; /* Wrap logos */
+    }
+
+    .logos img {
+        width: 90px; /* Adjust size for mobile */
+        margin: 5px; /* Adjust spacing for mobile */
+    }
+    .logos img.large {
+        width: 90px; /* Adjust size for mobile */
+        margin: 5px; /* Adjust spacing for mobile */
     }
 }
